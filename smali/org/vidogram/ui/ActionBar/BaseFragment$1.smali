@@ -1,0 +1,67 @@
+.class Lorg/vidogram/ui/ActionBar/BaseFragment$1;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnDismissListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lorg/vidogram/ui/ActionBar/BaseFragment;->showDialog(Landroid/app/Dialog;ZLandroid/content/DialogInterface$OnDismissListener;)Landroid/app/Dialog;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lorg/vidogram/ui/ActionBar/BaseFragment;
+
+.field final synthetic val$onDismissListener:Landroid/content/DialogInterface$OnDismissListener;
+
+
+# direct methods
+.method constructor <init>(Lorg/vidogram/ui/ActionBar/BaseFragment;Landroid/content/DialogInterface$OnDismissListener;)V
+    .locals 0
+
+    iput-object p1, p0, Lorg/vidogram/ui/ActionBar/BaseFragment$1;->this$0:Lorg/vidogram/ui/ActionBar/BaseFragment;
+
+    iput-object p2, p0, Lorg/vidogram/ui/ActionBar/BaseFragment$1;->val$onDismissListener:Landroid/content/DialogInterface$OnDismissListener;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onDismiss(Landroid/content/DialogInterface;)V
+    .locals 2
+
+    iget-object v0, p0, Lorg/vidogram/ui/ActionBar/BaseFragment$1;->val$onDismissListener:Landroid/content/DialogInterface$OnDismissListener;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lorg/vidogram/ui/ActionBar/BaseFragment$1;->val$onDismissListener:Landroid/content/DialogInterface$OnDismissListener;
+
+    invoke-interface {v0, p1}, Landroid/content/DialogInterface$OnDismissListener;->onDismiss(Landroid/content/DialogInterface;)V
+
+    :cond_0
+    iget-object v0, p0, Lorg/vidogram/ui/ActionBar/BaseFragment$1;->this$0:Lorg/vidogram/ui/ActionBar/BaseFragment;
+
+    iget-object v1, p0, Lorg/vidogram/ui/ActionBar/BaseFragment$1;->this$0:Lorg/vidogram/ui/ActionBar/BaseFragment;
+
+    iget-object v1, v1, Lorg/vidogram/ui/ActionBar/BaseFragment;->visibleDialog:Landroid/app/Dialog;
+
+    invoke-virtual {v0, v1}, Lorg/vidogram/ui/ActionBar/BaseFragment;->onDialogDismiss(Landroid/app/Dialog;)V
+
+    iget-object v0, p0, Lorg/vidogram/ui/ActionBar/BaseFragment$1;->this$0:Lorg/vidogram/ui/ActionBar/BaseFragment;
+
+    const/4 v1, 0x0
+
+    iput-object v1, v0, Lorg/vidogram/ui/ActionBar/BaseFragment;->visibleDialog:Landroid/app/Dialog;
+
+    return-void
+.end method

@@ -1,0 +1,53 @@
+.class Lorg/vidogram/ui/PaymentFormActivity$TelegramWebviewProxy;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/vidogram/ui/PaymentFormActivity;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x2
+    name = "TelegramWebviewProxy"
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lorg/vidogram/ui/PaymentFormActivity;
+
+
+# direct methods
+.method private constructor <init>(Lorg/vidogram/ui/PaymentFormActivity;)V
+    .locals 0
+
+    iput-object p1, p0, Lorg/vidogram/ui/PaymentFormActivity$TelegramWebviewProxy;->this$0:Lorg/vidogram/ui/PaymentFormActivity;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lorg/vidogram/ui/PaymentFormActivity;Lorg/vidogram/ui/PaymentFormActivity$1;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lorg/vidogram/ui/PaymentFormActivity$TelegramWebviewProxy;-><init>(Lorg/vidogram/ui/PaymentFormActivity;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public postEvent(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 1
+    .annotation runtime Landroid/webkit/JavascriptInterface;
+    .end annotation
+
+    new-instance v0, Lorg/vidogram/ui/PaymentFormActivity$TelegramWebviewProxy$1;
+
+    invoke-direct {v0, p0, p1, p2}, Lorg/vidogram/ui/PaymentFormActivity$TelegramWebviewProxy$1;-><init>(Lorg/vidogram/ui/PaymentFormActivity$TelegramWebviewProxy;Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-static {v0}, Lorg/vidogram/messenger/AndroidUtilities;->runOnUIThread(Ljava/lang/Runnable;)V
+
+    return-void
+.end method

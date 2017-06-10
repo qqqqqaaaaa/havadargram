@@ -1,0 +1,55 @@
+.class Lorg/vidogram/ui/ProfileNotificationsActivity$3$5$1;
+.super Landroid/widget/TextView;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lorg/vidogram/ui/ProfileNotificationsActivity$3$5;->onCreateViewHolder(Landroid/view/ViewGroup;I)Lorg/vidogram/messenger/support/widget/RecyclerView$ViewHolder;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$2:Lorg/vidogram/ui/ProfileNotificationsActivity$3$5;
+
+
+# direct methods
+.method constructor <init>(Lorg/vidogram/ui/ProfileNotificationsActivity$3$5;Landroid/content/Context;)V
+    .locals 0
+
+    iput-object p1, p0, Lorg/vidogram/ui/ProfileNotificationsActivity$3$5$1;->this$2:Lorg/vidogram/ui/ProfileNotificationsActivity$3$5;
+
+    invoke-direct {p0, p2}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected onMeasure(II)V
+    .locals 3
+
+    const/high16 v2, 0x40000000    # 2.0f
+
+    invoke-static {p1, v2}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
+
+    move-result v0
+
+    const/high16 v1, 0x42400000    # 48.0f
+
+    invoke-static {v1}, Lorg/vidogram/messenger/AndroidUtilities;->dp(F)I
+
+    move-result v1
+
+    invoke-static {v1, v2}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
+
+    move-result v1
+
+    invoke-super {p0, v0, v1}, Landroid/widget/TextView;->onMeasure(II)V
+
+    return-void
+.end method

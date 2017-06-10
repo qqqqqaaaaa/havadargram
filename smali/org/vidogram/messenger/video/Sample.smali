@@ -1,0 +1,46 @@
+.class public Lorg/vidogram/messenger/video/Sample;
+.super Ljava/lang/Object;
+
+
+# instance fields
+.field private offset:J
+
+.field private size:J
+
+
+# direct methods
+.method public constructor <init>(JJ)V
+    .locals 3
+
+    const-wide/16 v0, 0x0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-wide v0, p0, Lorg/vidogram/messenger/video/Sample;->offset:J
+
+    iput-wide v0, p0, Lorg/vidogram/messenger/video/Sample;->size:J
+
+    iput-wide p1, p0, Lorg/vidogram/messenger/video/Sample;->offset:J
+
+    iput-wide p3, p0, Lorg/vidogram/messenger/video/Sample;->size:J
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getOffset()J
+    .locals 2
+
+    iget-wide v0, p0, Lorg/vidogram/messenger/video/Sample;->offset:J
+
+    return-wide v0
+.end method
+
+.method public getSize()J
+    .locals 2
+
+    iget-wide v0, p0, Lorg/vidogram/messenger/video/Sample;->size:J
+
+    return-wide v0
+.end method

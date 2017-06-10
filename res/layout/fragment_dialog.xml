@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tl="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/fl_dialog" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <itman.Vidofilm.tabLayout.CommonTabLayout android:id="@id/tl_dialog" android:layout_width="fill_parent" android:layout_height="45.0dip" tl:tl_indicator_bounce_enable="true" tl:tl_indicator_color="#82ffffff" tl:tl_indicator_gravity="TOP" tl:tl_textSelectColor="#ff2c97de" tl:tl_textUnselectColor="#66000000" tl:tl_underline_color="#ff527da3" tl:tl_underline_gravity="TOP" tl:tl_underline_height="4.0dip" tl:tl_iconGravity="RIGHT" />
+    </LinearLayout>
+</FrameLayout>

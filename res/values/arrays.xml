@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="persian_months">
+        <item>Farvardin</item>
+        <item>Ordibehesht</item>
+        <item>Khordad</item>
+        <item>Tir</item>
+        <item>Mordad</item>
+        <item>Shahrivar</item>
+        <item>Mehr</item>
+        <item>Aban</item>
+        <item>Azar</item>
+        <item>Dey</item>
+        <item>Bahman</item>
+        <item>Esfand</item>
+    </string-array>
+    <string-array name="persian_week_days">
+        <item>Shanbe</item>
+        <item>Yekshanbe</item>
+        <item>Doshanbe</item>
+        <item>Seshanbe</item>
+        <item>Charshanbe</item>
+        <item>Panjshanbe</item>
+        <item>Jome</item>
+    </string-array>
+    <string-array name="android_wear_capabilities">
+        <item>telegram_full_app</item>
+    </string-array>
+    <string-array name="audioCodecs">
+        <item>OPUS</item>
+        <item>ISAC</item>
+    </string-array>
+    <string-array name="cameraFps">
+        <item>Default</item>
+        <item>30 fps</item>
+        <item>15 fps</item>
+    </string-array>
+    <array name="incoming_call_widget_2way_targets">
+        <item>@drawable/ic_lockscreen_answer</item>
+        <item>@drawable/ic_chat_bubble</item>
+        <item>@drawable/ic_lockscreen_decline</item>
+        <item>@null</item>
+    </array>
+    <string-array name="roomListContextMenu">
+        <item>Remove favorite</item>
+    </string-array>
+    <string-array name="speakerphone">
+        <item>Auto (proximity sensor)</item>
+        <item>Enabled</item>
+        <item>Disabled</item>
+    </string-array>
+    <string-array name="speakerphoneValues">
+        <item>auto</item>
+        <item>true</item>
+        <item>false</item>
+    </string-array>
+    <string-array name="startBitrate">
+        <item>Default</item>
+        <item>Manual</item>
+    </string-array>
+    <string-array name="videoCodecs">
+        <item>VP8</item>
+        <item>VP9</item>
+        <item>H264</item>
+    </string-array>
+    <string-array name="videoResolutions">
+        <item>Default</item>
+        <item>HD (1280 x 720)</item>
+        <item>VGA (640 x 480)</item>
+        <item>QVGA (320 x 240)</item>
+    </string-array>
+    <string-array name="videoResolutionsValues">
+        <item>Default</item>
+        <item>1280 x 720</item>
+        <item>640 x 480</item>
+        <item>320 x 240</item>
+    </string-array>
+</resources>

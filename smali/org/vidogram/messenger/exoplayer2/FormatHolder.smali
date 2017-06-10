@@ -1,0 +1,16 @@
+.class public final Lorg/vidogram/messenger/exoplayer2/FormatHolder;
+.super Ljava/lang/Object;
+
+
+# instance fields
+.field public format:Lorg/vidogram/messenger/exoplayer2/Format;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

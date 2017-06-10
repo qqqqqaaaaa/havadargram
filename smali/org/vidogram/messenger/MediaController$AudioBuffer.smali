@@ -1,0 +1,49 @@
+.class Lorg/vidogram/messenger/MediaController$AudioBuffer;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/vidogram/messenger/MediaController;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x2
+    name = "AudioBuffer"
+.end annotation
+
+
+# instance fields
+.field buffer:Ljava/nio/ByteBuffer;
+
+.field bufferBytes:[B
+
+.field finished:I
+
+.field pcmOffset:J
+
+.field size:I
+
+.field final synthetic this$0:Lorg/vidogram/messenger/MediaController;
+
+
+# direct methods
+.method public constructor <init>(Lorg/vidogram/messenger/MediaController;I)V
+    .locals 1
+
+    iput-object p1, p0, Lorg/vidogram/messenger/MediaController$AudioBuffer;->this$0:Lorg/vidogram/messenger/MediaController;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    invoke-static {p2}, Ljava/nio/ByteBuffer;->allocateDirect(I)Ljava/nio/ByteBuffer;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lorg/vidogram/messenger/MediaController$AudioBuffer;->buffer:Ljava/nio/ByteBuffer;
+
+    new-array v0, p2, [B
+
+    iput-object v0, p0, Lorg/vidogram/messenger/MediaController$AudioBuffer;->bufferBytes:[B
+
+    return-void
+.end method

@@ -1,0 +1,55 @@
+.class Lorg/vidogram/ui/ChatActivity$22;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lorg/vidogram/ui/ChatActivity;->createView(Landroid/content/Context;)Landroid/view/View;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lorg/vidogram/ui/ChatActivity;
+
+
+# direct methods
+.method constructor <init>(Lorg/vidogram/ui/ChatActivity;)V
+    .locals 0
+
+    iput-object p1, p0, Lorg/vidogram/ui/ChatActivity$22;->this$0:Lorg/vidogram/ui/ChatActivity;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/view/View;)V
+    .locals 4
+
+    const/4 v3, 0x0
+
+    iget-object v0, p0, Lorg/vidogram/ui/ChatActivity$22;->this$0:Lorg/vidogram/ui/ChatActivity;
+
+    iget-object v1, p0, Lorg/vidogram/ui/ChatActivity$22;->this$0:Lorg/vidogram/ui/ChatActivity;
+
+    iget-object v1, v1, Lorg/vidogram/ui/ChatActivity;->info:Lorg/vidogram/tgnet/TLRPC$ChatFull;
+
+    iget v1, v1, Lorg/vidogram/tgnet/TLRPC$ChatFull;->pinned_msg_id:I
+
+    const/4 v2, 0x1
+
+    # invokes: Lorg/vidogram/ui/ChatActivity;->scrollToMessageId(IIZI)V
+    invoke-static {v0, v1, v3, v2, v3}, Lorg/vidogram/ui/ChatActivity;->access$8900(Lorg/vidogram/ui/ChatActivity;IIZI)V
+
+    return-void
+.end method
